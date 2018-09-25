@@ -7,7 +7,7 @@ Replace VendorID, Product ID, find serial via
 udevadm info -a -n /dev/ttyUSB0 | grep '{serial}' | head -n1
 
     SUBSYSTEM=="tty", ATTRS{idVendor}=="067b", ATTRS{idProduct}=="2303",
-    ATTRS{serial}=="3f980000.usb", SYMLINK+="pgmtvleft"
+    ATTRS{serial}=="SERIAL", SYMLINK+="NAMEOFDEVICE"
 
 python samsungtv.py 'ARG'
 
